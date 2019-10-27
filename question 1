@@ -2,9 +2,20 @@ import re
 f = open("mydata.txt", 'r')
 f = f.read()
 print(f)
-print(f.translate({ord(i): None for i in '?.'',(0):;!"'}))
+v = f.translate({ord(i): None for i in '?.'',(0):;!"'})
 check = re.findall(r'[A]\w+', f)
 print(check)
 ahideout = []
 ahideout.append(check)
-print(ahideout)
+#print(ahideout)
+#key1 = 'har'
+val1 = 'harr'
+val1 = v[520:537]
+key1 = check[0]
+print(key1)
+items = dict()
+items.update(key1=val1)
+print(items)
+print(v.index("Annotated8" [-1]))
+val1 = v[520:537]
+print(items.keys())
