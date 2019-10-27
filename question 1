@@ -1,0 +1,10 @@
+import re
+f = open("mydata.txt", 'r')
+f = f.read()
+print(f)
+print(f.translate({ord(i): None for i in '?.'',(0):;!"'}))
+check = re.findall(r'[A]\w+', f)
+print(check)
+ahideout = []
+ahideout.append(check)
+print(ahideout)
